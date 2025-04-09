@@ -1,0 +1,70 @@
+<!--
+This is the HTML code for a Rock Paper Scissors game.
+It provides the structure and layout of the game, including 
+choices for the user to select, a score display for both user 
+and computer, and a message container to show game results.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="icon" type="image/png" href="rockpaperscissor.webp" />
+    <!-- Linking the external CSS file for styling -->
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Game Title -->
+      <h1>Rock Paper Scissors Game. Let's Play.</h1>
+
+      <!-- Choices available for the user -->
+      <div class="choices">
+        <!-- Rock choice with an associated image -->
+        <div class="choice" id="rock">
+          <img src="rpsro.jpg" alt="Rock" />
+        </div>
+
+        <!-- Paper choice with an associated image -->
+        <div class="choice" id="paper">
+          <img src="rpspap.jpg" alt="Paper" />
+        </div>
+
+        <!-- Scissors choice with an associated image -->
+        <div class="choice" id="scissor">
+          <img src="rpssci.jpg" alt="Scissors" />
+        </div>
+      </div>
+
+      <!-- Scoreboard to display the scores of user and computer -->
+      <div class="score-board">
+        <!-- User's score -->
+        <div class="score">
+          <p id="user-score">0</p>
+          <!-- Score starts at 0 -->
+          <p>You</p>
+          <!-- Label for the user's score -->
+        </div>
+
+        <!-- Computer's score -->
+        <div class="score">
+          <p id="comp-score">0</p>
+          <!-- Score starts at 0 -->
+          <p>Computer</p>
+          <!-- Label for the computer's score -->
+        </div>
+      </div>
+
+      <!-- Message container to show game results -->
+      <div class="msg-container">
+        <p id="msg">Play your turn.</p>
+        <!-- Default message -->
+      </div>
+    </header>
+
+    <!-- Linking the JavaScript file for game logic -->
+    <script src="rockpaperscissor.js"></script>
+  </body>
+</html>

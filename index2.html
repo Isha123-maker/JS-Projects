@@ -1,0 +1,78 @@
+<!-- 
+  This is the HTML file for a simple calculator that performs basic arithmetic operations.
+  It includes buttons for numbers, operators, and functions like clear (AC), delete, and equals.
+  The layout is styled using an external CSS file, and the functionality is handled via JavaScript.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style2.css" />
+
+    <!-- Add a favicon to the browser tab -->
+    <link rel="icon" type="image/png" href="calculator.png" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Page Title -->
+    <h1>
+      This is a simple calculator that performs simple arithmetic operations.
+    </h1>
+
+    <!-- Calculator Container -->
+    <div class="calculator">
+      <!-- Input field to display user input and results -->
+      <input type="text" placeholder="0" id="display-box" />
+
+      <!-- Buttons for operators and numbers organized in rows -->
+      <!-- Row 1: Clear (AC), Delete, Modulus (%), Division -->
+      <div>
+        <button class="operator">AC</button>
+        <button class="operator">Del</button>
+        <button class="operator">%</button>
+        <button class="operator">/</button>
+      </div>
+
+      <!-- Row 2: Numbers 7, 8, 9, and Multiplication -->
+      <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+      </div>
+
+      <!-- Row 3: Numbers 4, 5, 6, and Subtraction -->
+      <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+      </div>
+
+      <!-- Row 4: Numbers 1, 2, 3, and Addition -->
+      <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+      </div>
+
+      <!-- Row 5: Double zero, 0, Decimal point, and Equals -->
+      <div>
+        <button>00</button>
+        <button>0</button>
+        <button>.</button>
+        <button id="equal-btn">=</button>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="calculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(#3c153b, #8b1e3f);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: none;
+}
+
+.text {
+  color: #89bd9e;
+  font-family: Arial, sans-serif;
+  font-size: 3em;
+  z-index: 2;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(circle, #550cca, #0ee4d2, #d3c60b);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  transition: all 0.15s ease-out;
+}
+
+.cursor-trail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(circle, #550cca, #0ee4d2, #d3c60b);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+  filter: blur(5px);
+  z-index: 2;
+}
+
+.cursor-trail:nth-child(3) {
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, #550cca, #0ee4d2, #d3c60b);
+  transition-duration: 0.4s;
+}

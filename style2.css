@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(#101935, #564787);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute; /* Place it at an exact position relative to the body */
+  top: 20px; /* Distance from the top of the page */
+  left: 50%; /* Move the h1 to 50% of the page's width */
+  transform: translateX(
+    -50%
+  ); /* Adjust it back by 50% of its own width for proper centering */
+  font-size: 36px; /* Adjust font size */
+  color: #f2fdff; /* Match it with the calculator styling */
+  text-shadow: 0 0 10px #9ad4d6; /* Add a slight shadow effect */
+  text-align: center; /* Center-align the text inside */
+}
+
+.calculator {
+  padding: 15px;
+  background-color: #dbcbd8;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px #9ad4d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 10px;
+  width: 300px;
+  padding: 15px;
+  border: none;
+  text-align: right;
+  font-size: 45px;
+  background: transparent;
+}
+
+input::placeholder {
+  color: black;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #101935;
+  margin: 7px;
+  color: white;
+  box-shadow: 0 0 10px #9ad4d6;
+  cursor: pointer;
+}
+
+#equal-btn {
+  background-color: orangered;
+}
+
+.operator {
+  color: orangered;
+}

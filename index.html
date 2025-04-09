@@ -1,0 +1,54 @@
+<!-- 
+  This is the HTML code for a simple Tic Tac Toe game. 
+  It includes a grid for the game, buttons for interacting with the game, and a message container 
+  to display the winner or game status.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game</title>
+    <link rel="icon" type="image/png" href="tictactoe.webp" />
+
+    <!-- Linking the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Message container to display the winner or game messages -->
+    <div class="msg-container hide">
+      <!-- Message to show the winner -->
+      <p id="msg">Winner</p>
+      <!-- Button to start a new game -->
+      <button id="new-game">New game</button>
+    </div>
+
+    <main>
+      <!-- Main heading for the game -->
+      <h1>This is Tic Tac Toe Game. Let's play.</h1>
+
+      <!-- Game container to hold the Tic Tac Toe grid -->
+      <div class="container">
+        <div class="game">
+          <!-- Nine buttons representing the boxes of the Tic Tac Toe grid -->
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <!-- Button to reset the game to its initial state -->
+      <button id="reset-btn">Reset Game</button>
+    </main>
+
+    <!-- Linking the external JavaScript file for game logic -->
+    <script src="tictaetoe.js"></script>
+  </body>
+</html>

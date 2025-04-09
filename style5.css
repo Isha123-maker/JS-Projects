@@ -1,0 +1,31 @@
+/* Reset default margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide the default cursor and set a dark background */
+body {
+  cursor: none;
+  background: #111;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Custom cursor styling */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  border-radius: 50%;
+  /* Radial gradient with different dark colors for a smokey effect */
+  background: radial-gradient(circle, #860a86, #31088f, #1fadb8);
+  transform: translate(-50%, -50%);
+  filter: blur(3px);
+  mix-blend-mode: lighten;
+  transition: transform 0.05s ease-out;
+}
